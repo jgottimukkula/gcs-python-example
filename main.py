@@ -46,12 +46,12 @@ def menu():
         selection = int(raw_input('Enter your selection: '))
         if selection > 5 or selection < 1:
             print "Error: please enter valid number"
-            menu()
+            return menu()
         else:
             return selection
     except ValueError:
         print "Error: Please enter a number"
-        menu()
+        return menu()
 
 
 def main():
